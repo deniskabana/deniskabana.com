@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 const StyledHeaderBg = styled.div`
@@ -17,9 +16,13 @@ const StyledHeaderBg = styled.div`
 `
 
 const StyledHeader = styled.div`
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   background: #32323B;
+  color: white;
   width: 100%;
   height: 95vh;
   overflow: hidden;
@@ -32,7 +35,7 @@ const StyledHeader = styled.div`
     width: 130vw;
     height: 20rem;
     position: absolute;
-    top: 100%;
+    top: 98%;
     transform-origin: left bottom;
     transform: rotateZ(-2deg);
   }
@@ -40,7 +43,9 @@ const StyledHeader = styled.div`
 
 const Header = () => (
   <StyledHeader>
-    <StyledHeaderBg />
+      <StyledHeaderBg />
+      <h1>&lt;DenisKabana /&gt;</h1>
+      <h2>Web and web app full stack developer and project manager.</h2>
   </StyledHeader>
 )
 

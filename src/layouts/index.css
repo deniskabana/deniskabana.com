@@ -627,3 +627,10 @@ pre tt:after {
 *:after {
   box-sizing: border-box;
 }
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 18px;
+    font-size: 1.8rem;
+}
