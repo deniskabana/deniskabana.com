@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 import globals from 'config/globals'
 import { H1, H2 } from 'components/common/Text'
@@ -29,14 +29,14 @@ const StyledHeader = styled.div`
   width: 100%;
   height: 95vh;
   overflow: hidden;
-  min-height: 40rem;
+  min-height: 400px;
 
   &:after {
     content: ' ';
     display: block;
     background: white;
     width: 130vw;
-    height: 20rem;
+    height: 200px;
     position: absolute;
     top: 98%;
     transform-origin: left bottom;
@@ -46,10 +46,10 @@ const StyledHeader = styled.div`
 
 const StyledTitle = styled(H1)`
   position: relative;
-  margin-top: -2rem;
+  margin: -20px 0 40px;
   color: ${globals.colorGolden};
   font-family: 'Source Code Pro';
-  font-size: 10.5em;
+  font-size: 105px;
   letter-spacing: 0.8;
 `
 
@@ -57,11 +57,32 @@ const StyledSubtitle = styled(H2)`
   position: relative;
 `
 
+const bounceAnimation = keyframes`
+  0%, 4%, 12.5%, 20%, 25% {transform: translateY(0);}
+  10% {transform: translateY(-10px);}
+  15% {transform: translateY(-5px);}
+`
+
+const StyledArrow = styled.a`
+  display: block;
+  width: 72px;
+  height: 39px;
+  position: absolute;
+  left: 50%;
+  margin-left: -36px;
+  bottom: 10%;
+  opacity: 0.4;
+  background: url(files/arrow.svg) no-repeat center;
+  background-size: 100% auto;
+  animation: ${bounceAnimation} ease-out 4s infinite;
+`
+
 const Header = () => (
   <StyledHeader>
     <StyledHeaderBg />
     <StyledTitle>&lt;DenisKabana /&gt;</StyledTitle>
     <StyledSubtitle>Web and web app full stack developer and project manager.</StyledSubtitle>
+    <StyledArrow href="#introduction" title="Scroll down to the next section" />
   </StyledHeader>
 )
 
