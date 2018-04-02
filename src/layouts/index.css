@@ -617,20 +617,9 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
-html {
-    font-size: 62.5%;
-}
-body {
-    font-size: 18px;
-    font-size: 1.8rem;
-}
+body { font-size:62.5%; }

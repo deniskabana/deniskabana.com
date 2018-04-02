@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import globals from 'config/globals'
+import { H1, H2 } from 'components/common/Text'
+
 const StyledHeaderBg = styled.div`
   display: block;
   position: absolute;
@@ -41,11 +44,24 @@ const StyledHeader = styled.div`
   }
 `
 
+const StyledTitle = styled(H1)`
+  position: relative;
+  margin-top: -2rem;
+  color: ${globals.colorGolden};
+  font-family: 'Source Code Pro';
+  font-size: 10.5em;
+  letter-spacing: 0.8;
+`
+
+const StyledSubtitle = styled(H2)`
+  position: relative;
+`
+
 const Header = () => (
   <StyledHeader>
-      <StyledHeaderBg />
-      <h1>&lt;DenisKabana /&gt;</h1>
-      <h2>Web and web app full stack developer and project manager.</h2>
+    <StyledHeaderBg />
+    <StyledTitle>&lt;DenisKabana /&gt;</StyledTitle>
+    <StyledSubtitle>Web and web app full stack developer and project manager.</StyledSubtitle>
   </StyledHeader>
 )
 
