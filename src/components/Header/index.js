@@ -2,7 +2,8 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
 import globals from 'config/globals'
-import { H1, H2 } from 'components/common/Text'
+import { Text } from 'components/common/Text'
+import Container from 'components/common/Container'
 
 const StyledHeaderBg = styled.div`
   display: block;
@@ -23,8 +24,9 @@ const StyledHeader = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   position: relative;
-  background: #32323B;
+  background: ${() => globals.colorGray};
   color: white;
   width: 100%;
   height: 95vh;
@@ -34,7 +36,7 @@ const StyledHeader = styled.div`
   &:after {
     content: ' ';
     display: block;
-    background: white;
+    background: ${() => globals.colorWhite};
     width: 130vw;
     height: 200px;
     position: absolute;
@@ -44,17 +46,19 @@ const StyledHeader = styled.div`
   }
 `
 
-const StyledTitle = styled(H1)`
+const StyledTitle = styled.h1`
   position: relative;
   margin: -20px 0 40px;
   color: ${globals.colorGolden};
-  font-family: 'Source Code Pro';
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
   font-size: 105px;
-  letter-spacing: 0.8;
 `
 
-const StyledSubtitle = styled(H2)`
+const StyledSubtitle = styled(Text)`
   position: relative;
+  font-size: 47px;
+  font-weight: 500;
 `
 
 const bounceAnimation = keyframes`
@@ -80,8 +84,10 @@ const StyledArrow = styled.a`
 const Header = () => (
   <StyledHeader>
     <StyledHeaderBg />
-    <StyledTitle>&lt;DenisKabana /&gt;</StyledTitle>
-    <StyledSubtitle>Web and web app full stack developer and project manager.</StyledSubtitle>
+    <Container>
+      <StyledTitle>&lt;DenisKabana /&gt;</StyledTitle>
+      <StyledSubtitle>Web and web app full stack developer and project manager.</StyledSubtitle>
+    </Container>
     <StyledArrow href="#introduction" title="Scroll down to the next section" />
   </StyledHeader>
 )

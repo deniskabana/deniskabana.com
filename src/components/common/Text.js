@@ -9,10 +9,6 @@ const typography = new Typography({
   baseLineHeight: 1.5,
   googleFonts: [
     {
-      name: 'Source Code Pro',
-      styles: [ 500 ],
-    },
-    {
       name: 'Source Sans Pro',
       styles: [ 700 ],
     },
@@ -21,16 +17,17 @@ const typography = new Typography({
       styles: [ 500, 600 ],
     },
   ],
-  headerFontFamily: ['Avenir Next', 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
-  bodyFontFamily: ['Georgia', 'serif'],
+  bodyFontFamily: ['Raleway', 'sans-serif'],
 })
 
 injectGlobal(typography)
 
-export const H1 = styled.h1`
-  letter-spacing: 0.8;
+export const Title = styled.span`
+  font-family: 'Source Sans Pro', serif;
+  font-size: ${(props) => props.size || '18px'};
 `
 
-export const H2 = styled.h2`
-  color: ${(props) => props.black ? globals.colorBlack : globals.colorWhite};
+export const Text = styled.span`
+  font-family: 'Raleway', sans-serif;
+  font-size: ${(props) => props.size || '18px'};
 `
