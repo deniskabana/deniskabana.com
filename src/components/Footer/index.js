@@ -18,7 +18,7 @@ const StyledText = styled(Text)`
 `
 const StyledSubfooter = styled(Text)`
   color: #A3A0A0;
-  font-size: 13px;
+  font-size: 11px;
 `
 
 const Footer = () => (

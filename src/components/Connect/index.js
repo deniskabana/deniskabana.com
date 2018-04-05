@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import globals from 'config/globals'
 import { Text } from 'components/common/Text'
@@ -40,23 +41,35 @@ const StyledIcon = styled.img`
 const Connect = () => (
   <Section dark id="lets-connect">
     <Container>
-      <Section.Title light>Let's connect!</Section.Title>
+      <ScrollAnimation animateIn="fadeIn" animateOnce>
+        <Section.Title light>Let's connect!</Section.Title>
+      </ScrollAnimation>
       <StyledSocialMedia>
-        <StyledSocial href="tel:+420720062021" title="Call me">
-          <StyledIcon src="files/phone.svg" alt="Phone number" />
-        </StyledSocial>
-        <StyledSocial href="mailto:me@deniskabana.com" title="Email me">
-          <StyledIcon src="files/mail.svg" alt="Email address" />
-        </StyledSocial>
-        <StyledSocial href="https://www.linkedin.com/in/denis-kabana/" title="Connect on LinkedIn">
-          <StyledIcon src="files/linkedin.svg" alt="LinkedIn" />
-        </StyledSocial>
-        <StyledSocial href="https://www.facebook.com/deniskabana" title="Chat on Messenger">
-          <StyledIcon src="files/facebook.svg" alt="Facebook" />
-        </StyledSocial>
-        <StyledSocial href="https://github.com/deniskabana" title="Check my GitHub">
-          <StyledIcon src="files/github.svg" alt="GitHub" />
-        </StyledSocial>
+        <ScrollAnimation animateIn="zoomIn" animateOnce delay={90}>
+          <StyledSocial href="tel:+420720062021" title="Call me">
+            <StyledIcon src="files/phone.svg" alt="Phone number" />
+          </StyledSocial>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="zoomIn" animateOnce delay={180}>
+          <StyledSocial href="mailto:me@deniskabana.com" title="Email me">
+            <StyledIcon src="files/mail.svg" alt="Email address" />
+          </StyledSocial>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="zoomIn" animateOnce delay={270}>
+          <StyledSocial href="https://www.linkedin.com/in/denis-kabana/" title="Connect on LinkedIn">
+            <StyledIcon src="files/linkedin.svg" alt="LinkedIn" />
+          </StyledSocial>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="zoomIn" animateOnce delay={360}>
+          <StyledSocial href="https://www.facebook.com/deniskabana" title="Chat on Messenger">
+            <StyledIcon src="files/facebook.svg" alt="Facebook" />
+          </StyledSocial>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="zoomIn" animateOnce delay={450}>
+          <StyledSocial href="https://github.com/deniskabana" title="Check my GitHub">
+            <StyledIcon src="files/github.svg" alt="GitHub" />
+          </StyledSocial>
+        </ScrollAnimation>
       </StyledSocialMedia>
     </Container>
   </Section>
