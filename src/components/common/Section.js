@@ -3,8 +3,28 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 import globals from 'config/globals'
+import { Title } from 'components/common/Text'
 
-// Section wrapper
+// Usage <Section.Title>A title</Section.Title>
+
+const SectionTitle = styled(Title)`
+  display: block;
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 72px;
+  font-weight: 700;
+  color: ${(props) => props.light ? globals.colorWhite : globals.colorBlack};
+`
+
+SectionTitle.propTypes = {
+  light: PropTypes.bool,
+}
+
+SectionTitle.defaultProps = {
+  light: false,
+}
+
+
 // Usage <Section dark></Section>
 
 const StyledSection = styled.section`
@@ -20,5 +40,7 @@ StyledSection.propTypes = {
 StyledSection.defaultProps = {
   dark: false,
 }
+
+StyledSection.Title = SectionTitle
 
 export default StyledSection

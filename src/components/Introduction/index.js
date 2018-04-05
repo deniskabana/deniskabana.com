@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import globals from 'config/globals'
 import { Text } from 'components/common/Text'
 import Section from 'components/common/Section'
 import { Align } from 'components/common/helpers'
