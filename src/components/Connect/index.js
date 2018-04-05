@@ -38,7 +38,7 @@ const StyledIcon = styled.img`
 `
 
 const Connect = () => (
-  <Section dark>
+  <Section dark id="lets-connect">
     <Container>
       <Section.Title light>Let's connect!</Section.Title>
       <StyledSocialMedia>

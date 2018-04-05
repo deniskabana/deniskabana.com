@@ -46,7 +46,7 @@ const StyledSection = styled(Section)`
 `
 
 const Perks = () => (
-  <StyledSection dark>
+  <StyledSection dark id="im-good-at">
     <Container>
       <Align center>
         <Row>

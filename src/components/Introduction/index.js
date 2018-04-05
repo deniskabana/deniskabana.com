@@ -27,7 +27,7 @@ const StyledIntroTitle = styled.h2`
 `
 
 const Introduction = () => (
-  <Section>
+  <Section id="about-me">
     <Container>
       <Align center>
         <StyledAvatar title="Denis Kabana" />

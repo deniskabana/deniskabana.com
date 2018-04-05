@@ -82,7 +82,7 @@ const StyledArrow = styled.a`
 `
 
 const Header = () => (
-  <StyledHeader>
+  <StyledHeader id="header">
     <StyledHeaderBg />
     <Container>
       <StyledTitle>&lt;DenisKabana /&gt;</StyledTitle>

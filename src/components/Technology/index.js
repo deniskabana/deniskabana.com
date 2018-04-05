@@ -22,7 +22,7 @@ const StyledTextContainer = styled.div`
 `
 
 const Technology = () => (
-  <Section>
+  <Section id="what-i-work-with">
     <Container>
       <Section.Title>What I work with</Section.Title>
       <StyledTextContainer>
