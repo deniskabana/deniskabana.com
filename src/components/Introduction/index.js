@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import { Text } from 'components/common/Text'
 import Section from 'components/common/Section'
@@ -30,13 +31,19 @@ const Introduction = () => (
   <Section id="about-me">
     <Container>
       <Align center>
-        <StyledAvatar title="Denis Kabana" />
-        <StyledIntroTitle>Hi, I'm Denis.</StyledIntroTitle>
-        <Text size="24px">
-          I love what I do and I can help you love your project too.
-          <br />
-          Besides being a developer I am also a music composer and project manager.
-        </Text>
+        <ScrollAnimation animateIn="fadeIn" animateOnce>
+          <StyledAvatar title="Denis Kabana" />
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" animateOnce>
+          <StyledIntroTitle>Hi, I'm Denis.</StyledIntroTitle>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" animateOnce>
+          <Text size="24px">
+            I love what I do and I can help you love your project too.
+            <br />
+            Besides being a developer I am also a music composer and project manager.
+          </Text>
+        </ScrollAnimation>
       </Align>
     </Container>
   </Section>

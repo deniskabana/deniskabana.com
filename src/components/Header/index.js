@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import globals from 'config/globals'
 import { Text } from 'components/common/Text'
@@ -86,7 +87,9 @@ const Header = () => (
     <StyledHeaderBg />
     <Container>
       <StyledTitle>&lt;DenisKabana /&gt;</StyledTitle>
-      <StyledSubtitle>Web and web app full stack developer and project manager.</StyledSubtitle>
+      <ScrollAnimation animateIn="fadeIn" animateOnce delay={400}>
+        <StyledSubtitle>Web and web app full stack developer and project manager.</StyledSubtitle>
+      </ScrollAnimation>
     </Container>
     <StyledArrow href="#introduction" title="Scroll down to the next section" />
   </StyledHeader>
