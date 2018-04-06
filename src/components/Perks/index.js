@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import globals from 'config/globals'
+import media from 'config/media'
 import { Text, Title } from 'components/common/Text'
 import Section from 'components/common/Section'
 import { Align } from 'components/common/helpers'
@@ -16,34 +17,65 @@ const StyledImage = styled.img`
 `
 
 const StyledImageWrapper = styled.div`
-  display: block;
+  display: flex;
+  align-items: center;
   width: 75px;
-  height: 130px;
+  height: 100px;
   margin: 0 auto;
+
+  ${media.tablet`
+    height: 130px;
+  `}
 `
 
 const StyledTitle = styled(Title)`
   display: block;
   color: ${() => globals.colorWhite};
-  font-size: 36px;
   font-weight: 600;
   margin-bottom: 10px;
+  font-size: 24px;
+
+  ${media.tablet`
+    font-size: 36px;
+  `}
 `
 
 const StyledText = styled(Text)`
   display: block;
   color: ${() => globals.colorWhite};
-  font-size: 20px;
+  font-size: 18px;
 `
 
 const StyledColContainer = styled.div`
-  margin: 0 auto 180px;
-  padding: 0 30px;
+  margin: 0 0 80px;
+  padding: 0 15px;
   max-width: 350px;
+
+  ${media.tablet`
+    margin: 0 auto 180px;
+    padding: 0 30px;
+  `}
 `
 
 const StyledSection = styled(Section)`
-  padding: 180px 0 0;
+  padding: 80px 0 0;
+
+  ${media.tablet`
+    padding: 180px 0 0;
+  `}
+`
+
+const StyledRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  width: 100%;
+  margin-right: 0;
+
+  ${media.tablet`
+    margin-left: -15px;
+    margin-right: -15px;
+  `}
 `
 
 const perksData = [
@@ -59,7 +91,7 @@ const Perks = () => (
   <StyledSection dark id="im-good-at">
     <Container>
       <Align center>
-        <Row>
+        <StyledRow>
           {perksData.map((perk, index) => (
             <Col sm={6} md={4} key={index}>
               <StyledColContainer>
@@ -73,7 +105,7 @@ const Perks = () => (
               </StyledColContainer>
             </Col>
           ))}
-        </Row>
+        </StyledRow>
       </Align>
     </Container>
   </StyledSection>

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import globals from 'config/globals'
+import media from 'config/media'
 import { Text } from 'components/common/Text'
 import Section from 'components/common/Section'
 import { Align } from 'components/common/helpers'
@@ -10,18 +11,30 @@ import Container from 'components/common/Container'
 
 const StyledSocialMedia = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   margin: 100px 0 0;
-  justify-content: space-between;
+
+  ${media.desktop`
+    justify-content: space-between;
+  `}
 `
 
 const StyledSocial = styled.a`
   display: flex;
   align-items: center;
-  width: 85px;
+  flex: 1 0 auto;
+  width: 50px;
+  margin: 0 30px 40px;
+
+  ${media.desktop`
+    flex: 0 1 auto;
   margin: 0 30px;
-  height: 85px;
-  flex: 0 1 auto;
+    width: 85px;
+    height: 85px;
+  `}
 `
 
 const StyledIcon = styled.img`

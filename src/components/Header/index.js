@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import globals from 'config/globals'
+import media from 'config/media'
 import { Text } from 'components/common/Text'
 import Container from 'components/common/Container'
 
@@ -26,13 +27,17 @@ const StyledHeader = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 90px 0;
   position: relative;
   background: ${() => globals.colorGray};
   color: white;
   width: 100%;
-  height: 95vh;
+  height: auto;
   overflow: hidden;
-  min-height: 400px;
+
+  ${media.tablet`
+    height: 93vh;
+  `}
 
   &:after {
     content: ' ';
@@ -53,13 +58,25 @@ const StyledTitle = styled.h1`
   color: ${globals.colorGolden};
   font-family: 'Source Sans Pro';
   font-weight: 400;
-  font-size: 105px;
+  font-size: 34px;
+
+  ${media.tablet`
+    font-size: 48px;
+  `}
+
+  ${media.desktop`
+    font-size: 105px;
+  `}
 `
 
 const StyledSubtitle = styled(Text)`
   position: relative;
-  font-size: 47px;
+  font-size: 24px;
   font-weight: 500;
+
+  ${media.desktop`
+    font-size: 47px;
+  `}
 `
 
 const bounceAnimation = keyframes`
@@ -69,7 +86,7 @@ const bounceAnimation = keyframes`
 `
 
 const StyledArrow = styled.a`
-  display: block;
+  display: none;
   width: 72px;
   height: 39px;
   position: absolute;
@@ -80,6 +97,10 @@ const StyledArrow = styled.a`
   background: url(files/arrow.svg) no-repeat center;
   background-size: 100% auto;
   animation: ${bounceAnimation} ease-out 4s infinite;
+
+  ${media.phone`
+    display: block;
+  `}
 `
 
 const Header = () => (
@@ -91,7 +112,7 @@ const Header = () => (
         <StyledSubtitle>Web and web app full stack developer and project manager.</StyledSubtitle>
       </ScrollAnimation>
     </Container>
-    <StyledArrow href="#introduction" title="Scroll down to the next section" />
+    <StyledArrow href="#about-me" title="Scroll down to the next section" />
   </StyledHeader>
 )
 

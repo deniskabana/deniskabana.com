@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import ScrollAnimation from 'react-animate-on-scroll'
 
+import media from 'config/media'
 import { Text, Title } from 'components/common/Text'
 import Section from 'components/common/Section'
 import Container from 'components/common/Container'
@@ -9,7 +10,11 @@ import Container from 'components/common/Container'
 const StyledTitle = styled(Title)`
   display: block;
   margin-bottom: 20px;
-  font-size: 48px;
+  font-size: 26px;
+
+  ${media.tablet`
+    font-size: 48px;
+  `}
 `
 
 const StyledText = styled(Text)`
