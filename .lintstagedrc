@@ -1,0 +1,6 @@
+{
+  "**/*.${js,jsx,ts,tsx}": "yarn code:prettier && yarn code:lint --fix",
+  "**/*.${css,scss,ts,tsx}": "yarn code:stylelint --fix",
+  "**/*.${json,md,html}": "yarn code:prettier",
+  "package.json": "yarn code:sortpkg"
+}

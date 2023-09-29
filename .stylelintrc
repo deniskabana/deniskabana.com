@@ -1,0 +1,16 @@
+{
+  "cache": true,
+  "cacheLocation": "node_modules/.cache/stylelint",
+  "allowEmptyInput": true,
+  "extends": ["stylelint-config-standard"],
+  "overrides": [
+    {
+      "customSyntax": "postcss-styled-syntax",
+      "files": ["**/*.ts", "**/*.tsx"]
+    }
+  ],
+  "rules": {
+    "no-descending-specificity": null,
+    "no-invalid-double-slash-comments": null
+  }
+}
