@@ -1,26 +1,23 @@
-import { ThemeOptions, createTheme, colors as muiColors } from "@mui/material"
+import { ThemeOptions, createTheme } from "@mui/material"
 import { colors } from "./colors"
 import { themeTypography } from "./typography"
+import { muiComponents } from "./muiComponents"
 
 export type CheckboxLabelPlacement = "top" | "bottom" | "end" | "start"
 
 export const drawerWidth = 280
 
 const commonTheme: ThemeOptions = {
-  components: {
-    MuiDivider: {
-      styleOverrides: {
-        root: {
-          marginBottom: "2rem",
-          marginTop: "2rem",
-        },
-      },
-    },
+  components: { ...muiComponents },
+  palette: {
+    primary: { main: colors.primary },
+    secondary: { main: colors.secondary },
   },
-  palette: {},
   spacing: (factor: number) => `${0.25 * factor}rem`,
   typography: { ...themeTypography },
 }
+
+// GENERATE LIGHT AND DARK THEMES NOW
 
 export const lightTheme = createTheme({
   ...commonTheme,
@@ -28,7 +25,6 @@ export const lightTheme = createTheme({
     ...commonTheme.palette,
     background: { default: colors.backgroundLight },
     mode: "light",
-    primary: { main: muiColors.amber[500] },
   },
 })
 
@@ -38,6 +34,5 @@ export const darkTheme = createTheme({
     ...commonTheme.palette,
     background: { default: colors.backgroundDark },
     mode: "dark",
-    primary: { main: muiColors.amber[400] },
   },
 })

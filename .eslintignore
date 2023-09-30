@@ -1,3 +1,4 @@
 /aws
 /.next
 /.swc
+*.d.ts

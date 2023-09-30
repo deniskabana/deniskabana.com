@@ -1,12 +1,16 @@
 import { ThemeOptions } from "@mui/material"
-import { Raleway, Poppins } from "next/font/google"
+import { Raleway } from "next/font/google"
 
-export const FontPrimary = Raleway({ subsets: ["latin", "latin-ext"], weight: ["300", "600"] })
-export const FontSecondary = Poppins({ subsets: ["latin-ext"], weight: "700" })
+export const FontPrimary = Raleway({ subsets: ["latin", "latin-ext"], weight: ["500", "800"] })
+
+export const fontWeight = {
+  bold: 800,
+  regular: 500,
+}
 
 export const fontSizes = {
-  large: "1.25rem",
-  largest: "2.2rem",
+  large: "1.5rem",
+  largest: "2.5rem",
   medium: "1rem",
   small: "0.75rem",
   smallest: "0.5rem",
@@ -17,42 +21,39 @@ export type FontSizes = keyof typeof fontSizes
 export const themeTypography: ThemeOptions["typography"] = {
   allVariants: {
     fontFamily: FontPrimary.style.fontFamily,
-    fontWeight: 300,
+    fontWeight: fontWeight.regular,
+    letterSpacing: "0.015em",
   },
   body1: {
     fontSize: fontSizes.medium,
-    fontWeight: 300,
+    fontWeight: fontWeight.regular,
   },
   body2: {
     fontSize: fontSizes.small,
-    fontWeight: 300,
+    fontWeight: fontWeight.regular,
   },
   button: {
     fontSize: fontSizes.small,
-    fontWeight: 600,
+    fontWeight: fontWeight.bold,
     textTransform: "uppercase",
   },
-  fontWeightBold: 600,
-  fontWeightRegular: 300,
+  fontWeightBold: fontWeight.bold,
+  fontWeightRegular: fontWeight.regular,
   h1: {
-    fontFamily: FontSecondary.style.fontFamily,
     fontSize: fontSizes.largest,
-    fontWeight: FontSecondary.style.fontWeight,
+    fontWeight: fontWeight.regular,
     marginBottom: "1rem",
   },
   h2: {
-    fontFamily: FontSecondary.style.fontFamily,
     fontSize: fontSizes.large,
-    fontWeight: FontSecondary.style.fontWeight,
+    fontWeight: fontWeight.regular,
   },
   h3: {
-    fontFamily: FontSecondary.style.fontFamily,
     fontSize: fontSizes.medium,
-    fontWeight: FontSecondary.style.fontWeight,
+    fontWeight: fontWeight.bold,
   },
   h4: {
-    fontFamily: FontSecondary.style.fontFamily,
     fontSize: fontSizes.small,
-    fontWeight: FontSecondary.style.fontWeight,
+    fontWeight: fontWeight.bold,
   },
 }

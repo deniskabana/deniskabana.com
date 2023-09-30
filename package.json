@@ -3,17 +3,17 @@
   "version": "0.10.0",
   "scripts": {
     "build": "next export",
+    "clean:dist": "rm -rf ./out",
     "clean:hard": "yarn clean:soft && rm -rf ./node_modules ./.next ./yarn.lock",
     "clean:soft": "yarn clean:dist && rm -rf .yarn",
-    "clean:dist": "rm -rf ./out",
     "code:lint": "next lint",
-    "code:prettier": "prettier --write --loglevel=silent",
+    "code:prettier": "prettier --write --log-level=silent",
     "code:sortpkg": "sort-package-json",
     "code:stylelint": "stylelint",
     "code:tsc": "tsc --noEmit",
     "dev": "next dev",
-    "health:check": "yarn code:tsc && yarn code:lint ./src && yarn code:stylelint ./src",
-    "health:fix": "yarn code:prettier && yarn code:lint --fix && yarn code:sortpkg && yarn code:stylelint --fix",
+    "health:check": "yarn code:tsc && yarn code:lint && yarn code:stylelint ./src/**/*.{ts,tsx}",
+    "health:fix": "yarn code:prettier ./src/**/*.{json,md,html} && yarn code:lint --fix && yarn code:sortpkg && yarn code:stylelint --fix ./src/**/*.{ts,tsx}",
     "prepare": "husky install",
     "start": "yarn clean:dist && yarn build && cd out && npx serve -l 3000"
   },
@@ -33,7 +33,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-i18next": "^13.2.2",
-    "typescript": "^5.2.2"
+    "typescript": "5.1"
   },
   "devDependencies": {
     "@emotion/eslint-plugin": "^11.11.0",
@@ -41,8 +41,8 @@
     "@types/node": "20.5.4",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.5.0",
-    "@typescript-eslint/parser": "^6.5.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-prettier": "^5.0.0",
@@ -59,6 +59,7 @@
     "prettier": "^3.0.3",
     "sort-package-json": "^2.5.1",
     "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
     "ts-node": "^10.9.1"
   },
   "packageManager": "yarn@3.6.3",

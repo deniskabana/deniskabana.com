@@ -6,8 +6,8 @@ import Document, {
   DocumentProps,
   DocumentContext,
 } from "next/document"
-import createEmotionServer from "@emotion/server/create-instance"
 import { AppType } from "next/app"
+import createEmotionServer from "@emotion/server/create-instance"
 import { lightTheme } from "@/styles/theme"
 import createEmotionCache from "@/utils/createEmotionCache"
 import { FontPrimary } from "@/styles"
@@ -46,10 +46,10 @@ MyDocument.getInitialProps = async (ctx: DocumentContext) => {
 
   ctx.renderPage = () =>
     originalRenderPage({
-      enhanceApp:
-        (App: React.ComponentType<React.ComponentProps<AppType> & MyAppProps>) => (props) => (
-          <App emotionCache={cache} {...props} />
-        ),
+      enhanceApp: (App: React.ComponentType<React.ComponentProps<AppType> & MyAppProps>) =>
+        function EnhanceApp(props) {
+          return <App emotionCache={cache} {...props} />
+        },
     })
 
   const initialProps = await Document.getInitialProps(ctx)
