@@ -13,10 +13,23 @@ export const muiComponents: ThemeOptions["components"] = {
     },
   },
   MuiDivider: {
+    defaultProps: {
+      sx(theme) {
+        return {
+          borderColor: theme.palette.primary.main,
+        }
+      },
+    },
     styleOverrides: {
       root: {
-        marginBottom: "2rem",
-        marginTop: "2rem",
+        background: "transparent",
+        borderBottomWidth: "0.15rem",
+        borderTopWidth: 0,
+        display: "block",
+        marginBottom: "0.5rem",
+        marginLeft: 0,
+        marginRight: 0,
+        marginTop: "0.5rem",
       },
     },
   },

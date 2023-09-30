@@ -1,16 +1,15 @@
 import { css } from "@emotion/css"
 
 export const styles = {
-  link: css`
-    display: inline-block;
-    margin-bottom: 0.2rem;
-
+  headerButton: css`
     svg {
       margin-right: 0.5rem;
-      vertical-align: middle;
     }
   `,
   wrapper: css`
-    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 0;
+    gap: 0.75rem;
   `,
 }

@@ -1,7 +1,7 @@
 import { ThemeOptions } from "@mui/material"
-import { Raleway } from "next/font/google"
+import { Barlow as Font } from "next/font/google"
 
-export const FontPrimary = Raleway({ subsets: ["latin", "latin-ext"], weight: ["500", "800"] })
+export const FontPrimary = Font({ subsets: ["latin", "latin-ext"], weight: ["400", "800"] })
 
 export const fontWeight = {
   bold: 800,
@@ -22,7 +22,7 @@ export const themeTypography: ThemeOptions["typography"] = {
   allVariants: {
     fontFamily: FontPrimary.style.fontFamily,
     fontWeight: fontWeight.regular,
-    letterSpacing: "0.015em",
+    letterSpacing: "0.025rem",
   },
   body1: {
     fontSize: fontSizes.medium,
@@ -42,7 +42,7 @@ export const themeTypography: ThemeOptions["typography"] = {
   h1: {
     fontSize: fontSizes.largest,
     fontWeight: fontWeight.regular,
-    marginBottom: "1rem",
+    marginBottom: "0.5rem",
   },
   h2: {
     fontSize: fontSizes.large,

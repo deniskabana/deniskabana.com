@@ -2,7 +2,7 @@ import { css } from "@emotion/css"
 
 export const styles = {
   gridContainer: css`
-    padding: 6rem 0;
+    padding: 4rem 0;
   `,
   location: css`
     margin-top: 0.75rem;
@@ -10,17 +10,12 @@ export const styles = {
     align-items: center;
 
     svg {
-      margin-right: 0.25rem;
+      margin-right: 0.5rem;
     }
 
     div {
       display: block;
     }
-  `,
-  nameDivider: (color: string) => css`
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-color: ${color};
   `,
   profilePicture: (color: string) => css`
     overflow: hidden;

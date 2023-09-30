@@ -1,9 +1,7 @@
 export const colors = {
-  // Backgrounds
-  backgroundDark: "#222831", // A slightly richer dark grey
-  backgroundLight: "#FAFAFA", // A very light grey, almost white
+  backgroundDark: "#161f2a",
+  backgroundLight: "#f8f9fb",
 
-  // Primary and Secondary
-  primary: "#f38f43", // A muted, sophisticated orange
-  secondary: "#51abe2", // A calming teal-green
+  primary: "#e3af36",
+  secondary: "#d44f92",
 } as const
