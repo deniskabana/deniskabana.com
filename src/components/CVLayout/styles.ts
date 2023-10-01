@@ -6,7 +6,7 @@ export const styles = {
   gridColumnLeft: (theme: Theme) => css`
     flex: 0 0 ${drawerWidth}px;
     width: ${drawerWidth};
-    padding: 0 1.5rem;
+    padding: 0.5rem 1.5rem 0;
     border-right: 2px solid ${theme.palette.divider};
     text-align: right;
   `,

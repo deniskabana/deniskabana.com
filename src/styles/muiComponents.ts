@@ -1,5 +1,4 @@
 import { ThemeOptions } from "@mui/material"
-import { FONT_WEIGHTS } from "./typography"
 
 export const muiComponents: ThemeOptions["components"] = {
   MuiContainer: {
@@ -37,9 +36,6 @@ export const muiComponents: ThemeOptions["components"] = {
   MuiLink: {
     defaultProps: {
       color: "secondary",
-      sx: {
-        fontWeight: FONT_WEIGHTS.bold,
-      },
     },
   },
 }

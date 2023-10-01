@@ -3,5 +3,5 @@ export const colors = {
   backgroundLight: "#f8f9fb",
 
   primary: "#da8050",
-  secondary: "#b480e9",
+  secondary: "#9b68cf",
 } as const

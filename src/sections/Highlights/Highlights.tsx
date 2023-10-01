@@ -1,6 +1,7 @@
 import { Typography, useTheme } from "@mui/material"
 import CVLayout from "../../components/CVLayout/CVLayout"
 import { Technologies } from "../../components/highlights/Technologies/Technologies"
+import { Skills } from "../../components/highlights/Skills/Skills"
 
 export const Highlights = () => {
   const theme = useTheme()
@@ -8,13 +9,22 @@ export const Highlights = () => {
   return (
     <CVLayout>
       <CVLayout.ColumnLeft>
-        <Typography variant="h2" color={theme.palette.primary.main}>
+        <Typography variant="h3" color={theme.palette.primary.main}>
           Highlights
+        </Typography>
+        <Typography
+          mt={2.5}
+          variant="body2"
+          color={theme.palette.text.disabled}
+          lineHeight="1"
+          fontSize="0.65rem"
+        >
+          My favorite technologies and skills.
         </Typography>
       </CVLayout.ColumnLeft>
 
       <CVLayout.ColumnRight>
-        <Technologies />
+        <Skills />
         <Technologies />
       </CVLayout.ColumnRight>
     </CVLayout>

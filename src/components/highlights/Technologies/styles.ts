@@ -4,10 +4,11 @@ export const styles = {
   button: css`
     height: 1.75rem;
     border-radius: 1rem;
-    border-width: 2px !important;
+    border-width: 1px !important;
     text-transform: none;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
+    pointer-events: none;
 
     img {
       margin-right: 0.3rem;

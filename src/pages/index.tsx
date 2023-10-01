@@ -12,9 +12,9 @@ export default function Homepage() {
         <title>Denis Kabana - Professional CV</title>
       </Head>
 
-      <Container>
-        <Header />
+      <Header />
 
+      <Container>
         <Intro />
         <Highlights />
 
