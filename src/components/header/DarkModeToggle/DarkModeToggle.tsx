@@ -2,8 +2,8 @@ import { useContext, useEffect, useState } from "react"
 import { Button, Typography } from "@mui/material"
 import Brightness4Icon from "@mui/icons-material/Brightness4"
 import Brightness7Icon from "@mui/icons-material/Brightness7"
-import { styles } from "../../sections/Header/styles"
-import { DarkModeContext } from "../../providers/MuiThemeProvider"
+import { styles } from "../../../sections/Header/styles"
+import { DarkModeContext } from "../../../providers/MuiThemeProvider"
 
 export const DarkModeToggle = () => {
   const { userWantsDarkMode, setUserWantsDarkMode } = useContext(DarkModeContext)

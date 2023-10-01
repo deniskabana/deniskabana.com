@@ -1,8 +1,8 @@
 import { Fragment } from "react"
 import { Link, Typography } from "@mui/material"
-import { SOCIAL_MEDIA_LINKS } from "../../constants/socialMediaLinks"
+import { SOCIAL_MEDIA_LINKS } from "../../../constants/socialMediaLinks"
 import { styles } from "./styles"
-import { FONT_WEIGHTS } from "../../styles"
+import { FONT_WEIGHTS } from "../../../styles"
 
 const socialMediaLinks = SOCIAL_MEDIA_LINKS.map(({ href, icon: Icon, title, label }) => (
   <Fragment key={href}>

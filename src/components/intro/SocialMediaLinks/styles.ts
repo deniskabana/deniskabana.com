@@ -3,7 +3,7 @@ import { css } from "@emotion/css"
 export const styles = {
   link: css`
     display: inline-block;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.1rem;
     text-decoration: none;
 
     p {

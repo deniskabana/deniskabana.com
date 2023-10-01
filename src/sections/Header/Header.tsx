@@ -2,7 +2,7 @@ import { Button, Divider, Typography, useTheme } from "@mui/material"
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload"
 import GitHubIcon from "@mui/icons-material/GitHub"
 import { styles } from "./styles"
-import { DarkModeToggle } from "../../components/DarkModeToggle/DarkModeToggle"
+import { DarkModeToggle } from "../../components/header/DarkModeToggle/DarkModeToggle"
 
 export const Header = () => {
   const theme = useTheme()

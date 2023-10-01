@@ -2,5 +2,5 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 yarn lint-staged
-yarn health:fix
+yarn health:fix &>/dev/null
 yarn health:check
