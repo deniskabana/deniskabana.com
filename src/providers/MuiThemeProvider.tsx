@@ -1,13 +1,17 @@
-import { createContext, useEffect, useState } from "react"
+import { Dispatch, SetStateAction, createContext, useEffect, useState } from "react"
 import { ThemeProvider } from "@mui/material/styles"
 import useMediaQuery from "@mui/material/useMediaQuery"
 import { lightTheme, darkTheme } from "@/styles/theme"
-import { usePersistentState } from "react-persistent-state-hook"
 
 // DARK MODE CONTEXT
 // --------------------------------------------------
-export const DarkModeContext = createContext({
-  setUserWantsDarkMode: null as (value: boolean) => void | null,
+interface IDarkModeContext {
+  setUserWantsDarkMode: Dispatch<SetStateAction<boolean | null>> | null
+  userWantsDarkMode: boolean | null
+}
+
+export const DarkModeContext = createContext<IDarkModeContext>({
+  setUserWantsDarkMode: null,
   userWantsDarkMode: false,
 })
 
@@ -17,11 +21,15 @@ export const MuiThemeProvider = ({ children }: { children: React.ReactNode }) =>
   const osPrefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)")
   const isInPrintMode = useMediaQuery("print")
 
-  const [userWantsDarkMode, setUserWantsDarkMode] = usePersistentState(
-    null,
-    "ui/userWantsDarkMode",
-    { storageType: "session" },
-  )
+  /*
+   * This is the reason why DarkModeContext was combined with MuiThemeProvider.
+   */
+  const [userWantsDarkMode, setUserWantsDarkMode] = useState<boolean | null>(null)
+  // const [userWantsDarkMode, setUserWantsDarkMode] = usePersistentState(
+  //   null,
+  //   "ui/userWantsDarkMode",
+  //   { storageType: "session" },
+  // )
 
   // Protection for prioritized print override
   let prefersDarkMode = userWantsDarkMode

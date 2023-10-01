@@ -2,6 +2,7 @@ import { Fragment } from "react"
 import { Link, Typography } from "@mui/material"
 import { SOCIAL_MEDIA_LINKS } from "../../constants/socialMediaLinks"
 import { styles } from "./styles"
+import { FONT_WEIGHTS } from "../../styles"
 
 const socialMediaLinks = SOCIAL_MEDIA_LINKS.map(({ href, icon: Icon, title, label }) => (
   <Fragment key={href}>
@@ -13,7 +14,7 @@ const socialMediaLinks = SOCIAL_MEDIA_LINKS.map(({ href, icon: Icon, title, labe
       title={title}
       className={styles.link}
     >
-      <Typography variant="body2">
+      <Typography variant="body2" fontWeight={FONT_WEIGHTS.bold}>
         <Icon fontSize="small" />
         {label}
       </Typography>

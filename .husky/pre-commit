@@ -3,3 +3,4 @@
 
 yarn lint-staged
 yarn health:fix
+yarn health:check

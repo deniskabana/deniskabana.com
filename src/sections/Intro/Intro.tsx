@@ -1,4 +1,4 @@
-import { Divider, Grid, Typography, useTheme } from "@mui/material"
+import { Divider, Typography, useTheme } from "@mui/material"
 import Image from "next/image"
 
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined"
@@ -10,15 +10,8 @@ export const Intro = () => {
   const theme = useTheme()
 
   return (
-    <Grid item container className={styles.gridContainer} spacing={5}>
-      <Grid
-        item
-        container
-        sm={5}
-        md={4}
-        alignItems="center"
-        justifyContent="center"
-      >
+    <div className={styles.gridContainer}>
+      <div className={styles.gridColumnLeft}>
         <Image
           className={styles.profilePicture(theme.palette.primary.main)}
           src="/images/profile-photo.jpg"
@@ -35,9 +28,9 @@ export const Intro = () => {
             Czech republic
           </span>
         </Typography>
-      </Grid>
+      </div>
 
-      <Grid item container sm={7} md={8} alignItems="center">
+      <div className={styles.gridColumnRight}>
         <div>
           <Typography variant="h1">
             Denis&nbsp;
@@ -54,21 +47,21 @@ export const Intro = () => {
           <Divider />
 
           <Typography variant="body1" color={theme.palette.text.disabled}>
-            Senior Frontend Engineer / Lead / Mentor
+            Senior Frontend Engineer ・ Lead ・ Mentor
           </Typography>
 
           <br />
 
-          <Typography variant="body2">
-            <strong>Turpis, sit amet iaculis dui consectetur at.</strong> Cras
-            sagittis molestie orci. Suspendisse ut laoreet mi. Phasellus{" "}
-            <strong>eu tortor vehicula</strong>, blandit enim eu, auctor massa.
-            Nulla ultricies tortor dolor, sit amet suscipit enim condimentum id.
+          <Typography variant="body2" textAlign="justify">
+            <strong>Turpis, sit amet iaculis dui consectetur at.</strong> Cras sagittis
+            molestie orci. Suspendisse ut laoreet mi. Phasellus{" "}
+            <strong>eu tortor vehicula</strong>, blandit enim eu, auctor massa. Nulla
+            ultricies tortor dolor, sit amet suscipit enim condimentum id.
           </Typography>
 
           <SocialMediaLinks />
         </div>
-      </Grid>
-    </Grid>
+      </div>
+    </div>
   )
 }

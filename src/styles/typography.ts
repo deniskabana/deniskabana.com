@@ -1,14 +1,17 @@
 import { ThemeOptions } from "@mui/material"
 import { Barlow as Font } from "next/font/google"
 
-export const FontPrimary = Font({ subsets: ["latin", "latin-ext"], weight: ["400", "800"] })
+export const FontPrimary = Font({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "800"],
+})
 
-export const fontWeight = {
+export const FONT_WEIGHTS = {
   bold: 800,
   regular: 500,
 }
 
-export const fontSizes = {
+export const FONT_SIZES = {
   large: "1.5rem",
   largest: "2.5rem",
   medium: "1rem",
@@ -16,44 +19,44 @@ export const fontSizes = {
   smallest: "0.5rem",
 } as const
 
-export type FontSizes = keyof typeof fontSizes
+export type FontSizes = keyof typeof FONT_SIZES
 
 export const themeTypography: ThemeOptions["typography"] = {
   allVariants: {
     fontFamily: FontPrimary.style.fontFamily,
-    fontWeight: fontWeight.regular,
+    fontWeight: FONT_WEIGHTS.regular,
     letterSpacing: "0.025rem",
   },
   body1: {
-    fontSize: fontSizes.medium,
-    fontWeight: fontWeight.regular,
+    fontSize: FONT_SIZES.medium,
+    fontWeight: FONT_WEIGHTS.regular,
   },
   body2: {
-    fontSize: fontSizes.small,
-    fontWeight: fontWeight.regular,
+    fontSize: FONT_SIZES.small,
+    fontWeight: FONT_WEIGHTS.regular,
   },
   button: {
-    fontSize: fontSizes.small,
-    fontWeight: fontWeight.bold,
+    fontSize: FONT_SIZES.small,
+    fontWeight: FONT_WEIGHTS.bold,
     textTransform: "uppercase",
   },
-  fontWeightBold: fontWeight.bold,
-  fontWeightRegular: fontWeight.regular,
+  fontWeightBold: FONT_WEIGHTS.bold,
+  fontWeightRegular: FONT_WEIGHTS.regular,
   h1: {
-    fontSize: fontSizes.largest,
-    fontWeight: fontWeight.regular,
+    fontSize: FONT_SIZES.largest,
+    fontWeight: FONT_WEIGHTS.regular,
     marginBottom: "0.5rem",
   },
   h2: {
-    fontSize: fontSizes.large,
-    fontWeight: fontWeight.regular,
+    fontSize: FONT_SIZES.large,
+    fontWeight: FONT_WEIGHTS.regular,
   },
   h3: {
-    fontSize: fontSizes.medium,
-    fontWeight: fontWeight.bold,
+    fontSize: FONT_SIZES.medium,
+    fontWeight: FONT_WEIGHTS.bold,
   },
   h4: {
-    fontSize: fontSizes.small,
-    fontWeight: fontWeight.bold,
+    fontSize: FONT_SIZES.small,
+    fontWeight: FONT_WEIGHTS.bold,
   },
 }
