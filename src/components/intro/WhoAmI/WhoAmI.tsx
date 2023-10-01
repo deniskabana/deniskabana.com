@@ -27,10 +27,15 @@ export const WhoAmI = () => {
       <br />
 
       <Typography variant="body2" textAlign="justify">
-        <strong>Turpis, sit amet iaculis dui consectetur at.</strong> Cras sagittis
-        molestie orci. Suspendisse ut laoreet mi. Phasellus{" "}
-        <strong>eu tortor vehicula</strong>, blandit enim eu, auctor massa. Nulla
-        ultricies tortor dolor, sit amet suscipit enim condimentum id.
+        I am a <strong>Senior Frontend Engineer</strong> with <strong>10+ years</strong>{" "}
+        of professional experience. I <strong>started using React in 2015</strong> and
+        since then I have been a lot of technologies that came and went - including all
+        CSS preprocessors and CSS-in-JS libraries.
+        <br />
+        <br />I am used to <strong>leading teams, departments or projects</strong> and
+        mentoring junior team members with a hands-on approach. I am a strong{" "}
+        <strong>team player</strong> with <strong>proactive attitude</strong>, always
+        trying to improve the workflow and processes.
       </Typography>
 
       <SocialMediaLinks />

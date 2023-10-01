@@ -18,9 +18,10 @@ export const styles = {
   profilePicture: (color: string) => css`
     overflow: hidden;
     border-radius: 50%;
-    width: 8.5rem;
-    height: 8.5rem;
+    width: 7rem;
+    height: 7rem;
     border: 0.15rem solid ${color};
-    padding: 0.6rem;
+    padding: 0.4rem;
+    transform: scale(1.2);
   `,
 }

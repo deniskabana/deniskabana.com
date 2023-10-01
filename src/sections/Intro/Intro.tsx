@@ -4,7 +4,7 @@ import { WhoAmI } from "../../components/intro/WhoAmI/WhoAmI"
 
 export const Intro = () => {
   return (
-    <CVLayout>
+    <CVLayout landing>
       <CVLayout.ColumnLeft>
         <ProfilePhoto />
       </CVLayout.ColumnLeft>
