@@ -1,14 +1,20 @@
+import { Theme } from "@mui/material"
 import { css } from "@emotion/css"
 
 export const styles = {
-  button: css`
+  button: (theme: Theme) => css`
     height: 1.75rem;
     border-radius: 1rem;
     border-width: 1px !important;
+    border-color: ${theme.palette.text.disabled};
     text-transform: none;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     pointer-events: none;
+
+    p {
+      color: ${theme.palette.text.disabled};
+    }
 
     img {
       margin-right: 0.3rem;
@@ -25,7 +31,5 @@ export const styles = {
   title: css`
     margin-bottom: 1rem;
   `,
-  wrapper: css`
-    margin-bottom: 1.5rem;
-  `,
+  wrapper: css``,
 }

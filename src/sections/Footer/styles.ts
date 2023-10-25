@@ -7,6 +7,10 @@ export const styles = {
     border-bottom-width: 1px;
     margin: 1rem 0;
   `,
+  footer: css`
+    margin-top: 2.5rem;
+  `,
+  gdprWarning: css``,
   textContainer: css`
     max-width: 30rem;
     margin: 0 auto;
@@ -14,6 +18,10 @@ export const styles = {
   wrapper: css`
     text-align: center;
     padding: 2rem 0;
-    margin-top: 3rem;
+    margin-top: 1rem;
+
+    @media print {
+      display: none !important;
+    }
   `,
 }

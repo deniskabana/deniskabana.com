@@ -1,7 +1,10 @@
 export const colors = {
-  backgroundDark: "#161f2a",
+  backgroundDark: "#171e2c",
   backgroundLight: "#f8f9fb",
 
-  primary: "#da8050",
-  secondary: "#9b68cf",
+  mutedTextDark: "rgba(255,255,255,0.65)",
+  mutedTextLight: "rgba(0,0,0,0.5)",
+
+  primary: "#67bef0",
+  secondary: "#a584f8",
 } as const

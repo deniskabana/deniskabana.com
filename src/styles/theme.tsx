@@ -1,3 +1,4 @@
+import type {} from "@mui/lab/themeAugmentation"
 import { ThemeOptions, createTheme } from "@mui/material"
 import { colors } from "./colors"
 import { themeTypography } from "./typography"
@@ -25,6 +26,7 @@ export const lightTheme = createTheme({
     ...commonTheme.palette,
     background: { default: colors.backgroundLight },
     mode: "light",
+    text: { disabled: colors.mutedTextLight },
   },
 })
 
@@ -34,5 +36,6 @@ export const darkTheme = createTheme({
     ...commonTheme.palette,
     background: { default: colors.backgroundDark },
     mode: "dark",
+    text: { disabled: colors.mutedTextDark },
   },
 })

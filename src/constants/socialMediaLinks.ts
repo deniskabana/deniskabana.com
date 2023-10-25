@@ -5,7 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn"
 import GitHubIcon from "@mui/icons-material/GitHub"
 import AutoStoriesIcon from "@mui/icons-material/AutoStories"
 
-export type SocialMediaLink = {
+export interface SocialMediaLink {
   href: string
   icon: OverridableComponent<SvgIconTypeMap<object, "svg">> & {
     muiName: string

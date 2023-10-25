@@ -17,5 +17,8 @@ export const styles = {
   `,
   wrapper: css`
     margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
   `,
 }

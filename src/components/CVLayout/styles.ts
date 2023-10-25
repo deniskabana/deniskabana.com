@@ -5,7 +5,7 @@ import { drawerWidth } from "../../styles"
 export const styles = {
   gridColumnLeft: (theme: Theme) => css`
     flex: 0 0 ${drawerWidth}px;
-    width: ${drawerWidth};
+    width: ${drawerWidth}px;
     padding: 0.5rem 1.5rem 0;
     border-right: 2px solid ${theme.palette.divider};
     text-align: right;
@@ -15,8 +15,12 @@ export const styles = {
     padding: 0.25rem 1.5rem 0;
   `,
   gridContainer: (landing: boolean) => css`
-    margin: ${landing ? "5rem 0" : "2.5rem 0"};
+    margin: ${landing ? "5rem" : "3rem"} 0 4rem;
     display: flex;
+
+    @media print {
+      margin-top: 1rem !important;
+    }
 
     ${landing &&
     css`

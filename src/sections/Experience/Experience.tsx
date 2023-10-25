@@ -1,16 +1,16 @@
 import { Typography, useTheme } from "@mui/material"
 import CVLayout from "../../components/CVLayout/CVLayout"
-import { Technologies } from "../../components/highlights/Technologies/Technologies"
-import { Skills } from "../../components/highlights/Skills/Skills"
+import { JobsList } from "../../components/experience/JobsList/JobsList"
+import { Heading } from "../../components/experience/Heading/Heading"
 
-export const Highlights = () => {
+export const Experience = () => {
   const theme = useTheme()
 
   return (
     <CVLayout>
       <CVLayout.ColumnLeft>
         <Typography variant="h3" color={theme.palette.primary.main}>
-          Highlights
+          Professional experience
         </Typography>
         <Typography
           mt={2.5}
@@ -19,13 +19,13 @@ export const Highlights = () => {
           lineHeight="1"
           fontSize="0.65rem"
         >
-          Here is what is interesting about me.
+          A list of note-worthy clients I worked with.
         </Typography>
       </CVLayout.ColumnLeft>
 
       <CVLayout.ColumnRight>
-        <Skills />
-        <Technologies />
+        <Heading />
+        <JobsList />
       </CVLayout.ColumnRight>
     </CVLayout>
   )

@@ -4,6 +4,7 @@ export const styles = {
   location: css`
     margin-top: 1rem;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     text-align: justify;
 

@@ -33,6 +33,17 @@ export const muiComponents: ThemeOptions["components"] = {
       },
     },
   },
+  MuiLinearProgress: {
+    styleOverrides: {
+      bar: {
+        height: "8px",
+      },
+      root: {
+        borderRadius: "4px",
+        height: "8px",
+      },
+    },
+  },
   MuiLink: {
     defaultProps: {
       color: "secondary",

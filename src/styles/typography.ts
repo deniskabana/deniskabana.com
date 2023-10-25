@@ -3,7 +3,7 @@ import { Barlow as Font } from "next/font/google"
 
 export const FontPrimary = Font({
   subsets: ["latin", "latin-ext"],
-  weight: ["400", "800"],
+  weight: ["500", "800"],
 })
 
 export const FONT_WEIGHTS = {
@@ -16,7 +16,7 @@ export const FONT_SIZES = {
   largest: "2.5rem",
   medium: "1rem",
   small: "0.75rem",
-  smallest: "0.5rem",
+  smallest: "0.6rem",
 } as const
 
 export type FontSizes = keyof typeof FONT_SIZES

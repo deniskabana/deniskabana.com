@@ -4,6 +4,7 @@ import { Intro } from "../sections/Intro/Intro"
 import { Header } from "../sections/Header/Header"
 import { Footer } from "../sections/Footer/Footer"
 import { Highlights } from "../sections/Highlights/Highlights"
+import { Experience } from "../sections/Experience/Experience"
 
 export default function Homepage() {
   return (
@@ -17,9 +18,10 @@ export default function Homepage() {
       <Container>
         <Intro />
         <Highlights />
-
-        <Footer />
+        <Experience />
       </Container>
+
+      <Footer />
     </main>
   )
 }
