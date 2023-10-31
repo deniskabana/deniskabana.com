@@ -1,16 +1,15 @@
 import { Typography, useTheme } from "@mui/material"
+import BackLinks from "@/components/more-work/BackLinks/BackLinks"
 import CVLayout from "../../components/CVLayout/CVLayout"
-import { JobsList } from "../../components/experience/JobsList/JobsList"
-import { Heading } from "../../components/experience/Heading/Heading"
 
-export const Experience = () => {
+export const MoreDemo = () => {
   const theme = useTheme()
 
   return (
     <CVLayout>
       <CVLayout.ColumnLeft>
         <Typography variant="h3" color={theme.palette.primary.main}>
-          Professional experience
+          More of my work
         </Typography>
         <Typography
           mt={2.5}
@@ -19,13 +18,12 @@ export const Experience = () => {
           lineHeight="1"
           fontSize="0.65rem"
         >
-          Collaborations with noteworthy clients
+          Discover more from me
         </Typography>
       </CVLayout.ColumnLeft>
 
       <CVLayout.ColumnRight>
-        <Heading />
-        <JobsList />
+        <BackLinks />
       </CVLayout.ColumnRight>
     </CVLayout>
   )

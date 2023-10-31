@@ -46,7 +46,7 @@ export const styles = {
   `,
 
   timelineContent: css`
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
     padding-top: 0;
   `,
 

@@ -36,11 +36,7 @@ export const SingleJobDetail = ({ job, index }: SingleJobDetailProps) => {
           <Typography variant="body1" color="secondary" fontWeight={FONT_WEIGHTS.bold}>
             {job.name}
           </Typography>
-          <Typography
-            variant="body2"
-            fontWeight={FONT_WEIGHTS.bold}
-            className={styles.positionTitle}
-          >
+          <Typography variant="body2" className={styles.positionTitle}>
             {job.positionTitle}
           </Typography>
           <div className={styles.durationAndLocation}>

@@ -26,7 +26,7 @@ export const styles = {
       background-color: ${theme.palette.secondary.main};
     }
     ${"." + avatarClasses.root} svg {
-      width: 80%;
+      width: 70%;
       height: 70%;
       display: block;
       margin: auto;

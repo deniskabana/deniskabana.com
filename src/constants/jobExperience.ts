@@ -11,8 +11,8 @@ export interface Experience {
 
 export const experienceList: Experience[] = [
   {
-    dateEnd: "November 2022",
-    dateStart: "September 2023",
+    dateEnd: "September 2023",
+    dateStart: "November 2022",
     description:
       "I was met with an unexpected end of a project and decided to move on to keep actively working.",
     descriptionPoints: [
@@ -44,8 +44,8 @@ export const experienceList: Experience[] = [
     positionTitle: "Frontend Lead · Senior Frontend engineer & mentor · TypeScript",
   },
   {
-    dateEnd: "September 2018",
-    dateStart: "August 2023",
+    dateEnd: "August 2023",
+    dateStart: "September 2018",
     description:
       "I founded Neka Stores with two partners to continue the Neka brand's family legacy starting in 1993.",
     descriptionPoints: [

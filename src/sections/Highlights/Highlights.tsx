@@ -19,7 +19,7 @@ export const Highlights = () => {
           lineHeight="1"
           fontSize="0.65rem"
         >
-          Here is what is interesting about me.
+          Some of my unique qualities
         </Typography>
       </CVLayout.ColumnLeft>
 

@@ -21,7 +21,13 @@ export const ProfilePhoto = () => {
         <span>
           <strong>Prague</strong>
           <br />
-          Czech republic
+          <Typography
+            variant="body2"
+            display="inline"
+            color={theme.palette.text.disabled}
+          >
+            Czech republic
+          </Typography>
         </span>
       </Typography>
     </>

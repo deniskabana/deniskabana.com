@@ -1,6 +1,6 @@
 {
   "**/*.{ts,tsx}": ["yarn code:prettier", "cd src && yarn code:lint --fix"],
   "**/*.{css,scss,ts,tsx}": "yarn code:stylelint --fix",
-  "**/*.{json,md,html}": "yarn code:prettier",
+  "**/*.{json,md,html}": "yarn code:prettier --no-error-on-unmatched-pattern",
   "package.json": "yarn code:sortpkg"
 }

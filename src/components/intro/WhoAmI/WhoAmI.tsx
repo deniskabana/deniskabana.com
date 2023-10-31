@@ -3,6 +3,7 @@ import DirectionsCarIcon from "@mui/icons-material/DirectionsCar"
 import MusicNoteIcon from "@mui/icons-material/MusicNote"
 import SportsMartialArtsIcon from "@mui/icons-material/SportsMartialArts"
 import OutdoorGrillIcon from "@mui/icons-material/OutdoorGrill"
+import { FONT_WEIGHTS } from "@/styles"
 import { styles } from "./styles"
 
 export const WhoAmI = () => {
@@ -24,26 +25,30 @@ export const WhoAmI = () => {
 
       <Divider />
 
-      <Typography variant="body1" color={theme.palette.text.disabled}>
-        Senior Frontend Engineer ・ Technical Lead ・ Mentor
+      <Typography
+        variant="body2"
+        color={theme.palette.secondary.main}
+        fontWeight={FONT_WEIGHTS.bold}
+      >
+        Senior Frontend Engineer ・ Technical Lead ・ Mental health advocate
       </Typography>
 
       <br />
 
-      <Typography variant="body2" textAlign="justify" mb={1.5}>
-        Hi, I am Denis 👋
+      <Typography variant="body2" textAlign="justify" mb={2.5}>
+        Hello there! I&rsquo;m Denis 👋
       </Typography>
-      <Typography variant="body2" textAlign="justify" mb={1.5}>
-        People tell me I&apos;m an established{" "}
-        <strong>senior&nbsp;frontend&nbsp;engineer</strong> with strong background in web
-        browser technology, TypeScript, React.js and I now have more than{" "}
-        <strong>10 years</strong> of professional experience. I pride myself in my sense
-        of humor.
+      <Typography variant="body2" textAlign="justify" mb={2.5}>
+        Rumor has it, I&rsquo;m quite the seasoned senior frontend engineer with{" "}
+        <strong>over a decade under my belt</strong>, specializing in web browser tech,{" "}
+        <strong>TypeScript, and React.js</strong>. And yes, I&rsquo;m the kind of guy who
+        brings humor and positive vibes to the table 😅
       </Typography>
       <Typography variant="body2" textAlign="justify">
-        I am a flexible guy, a great communicator (sometimes even presenter 🤞) and{" "}
-        <strong>I prefer working with people</strong>. I love to work in teams, especially
-        if the teams have good synergy.
+        Flexibility&rsquo;s my middle name. When it comes to communication, I
+        shine&nbsp;&mdash;&nbsp;whether I&rsquo;m collaborating behind the scenes or
+        confidently stepping into the spotlight. I enjoy being praised for my
+        communication skills.
       </Typography>
 
       <div className={styles.hobbies}>

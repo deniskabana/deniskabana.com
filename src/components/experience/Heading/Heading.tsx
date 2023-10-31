@@ -6,13 +6,19 @@ export const Heading = () => {
   return (
     <>
       <Typography variant="body1" mb={2}>
-        A curated list of my client portfolio.
+        Selected Client Portfolio
       </Typography>
-      <Typography variant="body2" color={theme.palette.text.disabled} mb={4}>
-        This is a shortened version showcasing my skills. Some other clients I have not
-        mentioned are{" "}
+      <Typography
+        variant="body2"
+        color={theme.palette.text.disabled}
+        mb={4}
+        textAlign="justify"
+      >
+        Below is a concise selection highlighting my diverse range of experience. While
+        this list is illustrative, I&rsquo;ve also had the privilege of working with
+        notable names such as{" "}
         <Typography display="inline" variant="body2" color={theme.palette.text.primary}>
-          Air Bank
+          Air&nbsp;Bank
         </Typography>
         ,{" "}
         <Typography display="inline" variant="body2" color={theme.palette.text.primary}>
@@ -20,11 +26,11 @@ export const Heading = () => {
         </Typography>
         ,{" "}
         <Typography display="inline" variant="body2" color={theme.palette.text.primary}>
-          Eurojet Services
+          Eurojet&nbsp;Services
         </Typography>
         ,{" "}
         <Typography display="inline" variant="body2" color={theme.palette.text.primary}>
-          MEWS Systems
+          MEWS&nbsp;Systems
         </Typography>{" "}
         and more.
       </Typography>
