@@ -13,7 +13,7 @@ const socialMediaLinks = SOCIAL_MEDIA_LINKS.map(({ href, icon: Icon, title, labe
       title={title}
       className={styles.link}
     >
-      <Typography variant="body2">
+      <Typography variant="body2" color="primary">
         <Icon fontSize="small" />
         {label}
       </Typography>

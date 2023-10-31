@@ -4,7 +4,7 @@ import { css } from "@emotion/css"
 
 export const styles = {
   card: (theme: Theme) => css`
-    flex: 0 1 calc(50% - 2rem);
+    flex: 0 1 calc(33.3% - 0.5rem);
     border-radius: 1rem;
     background: transparent;
     border-color: ${theme.palette.secondary.main};
@@ -16,8 +16,8 @@ export const styles = {
   `,
   container: css`
     display: flex;
-    gap: 1rem;
-    justify-content: flex-start;
+    width: 100%;
+    justify-content: space-between;
     flex-wrap: wrap;
   `,
   dataType: (theme: Theme) => css`

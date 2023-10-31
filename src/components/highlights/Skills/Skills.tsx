@@ -8,7 +8,7 @@ export const Skills = () => {
   const theme = useTheme()
 
   const BAR_COLORS: LinearProgressProps["color"][] = useMemo(
-    () => ["warning", "secondary", "primary", "success", "inherit", "error"],
+    () => ["secondary", "info", "primary", "success", "inherit", "error"],
     [],
   )
 
