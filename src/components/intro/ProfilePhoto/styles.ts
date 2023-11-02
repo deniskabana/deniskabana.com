@@ -1,8 +1,36 @@
 import { css } from "@emotion/css"
 
 export const styles = {
+  contact: css`
+    margin-bottom: 0.25rem;
+    text-align: right;
+    font-size: 0.65rem;
+    text-decoration: underline;
+
+    svg {
+      display: block;
+      margin-left: auto;
+      margin-bottom: 0.1em;
+    }
+  `,
+  contactTitle: css`
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+
+    svg {
+      margin-right: 0.4rem;
+    }
+  `,
+  divider: css`
+    margin-top: 2rem;
+  `,
   location: css`
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;

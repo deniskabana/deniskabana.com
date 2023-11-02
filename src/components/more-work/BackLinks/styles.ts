@@ -9,6 +9,11 @@ export const styles = {
     background: transparent;
     border-color: ${theme.palette.secondary.main};
     border-width: 2px;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 15%);
+
+    @media print {
+      box-shadow: none;
+    }
   `,
   cardContent: css`
     padding: 0.5rem;
@@ -16,7 +21,10 @@ export const styles = {
   `,
   container: css`
     display: flex;
-    width: 100%;
+
+    /* width: 100%; */
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     justify-content: space-between;
     flex-wrap: wrap;
   `,
@@ -24,13 +32,17 @@ export const styles = {
     text-transform: capitalize;
     color: white;
     font-size: 0.6em;
-    box-shadow: 0 0 14px 2px rgb(0 0 0 / 90%);
+    box-shadow: 0 0 14px 0 rgb(0 0 0 / 60%);
     font-weight: ${FONT_WEIGHTS.bold};
     letter-spacing: 0.8;
     background-color: ${theme.palette.secondary.main};
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
+
+    @media print {
+      box-shadow: none;
+    }
   `,
   imageOverlay: css`
     position: absolute;
@@ -44,13 +56,21 @@ export const styles = {
     background: black;
 
     img {
-      opacity: 0.5;
+      opacity: 0.6;
       height: 100%;
+    }
+
+    @media print {
+      box-shadow: none;
     }
   `,
   title: css`
     color: white;
     font-weight: ${FONT_WEIGHTS.bold};
-    text-shadow: 0 0 14px rgb(0 0 0 / 90%);
+    text-shadow: 0 0 12px rgb(0 0 0 / 95%);
+
+    @media print {
+      text-shadow: none;
+    }
   `,
 }

@@ -14,7 +14,7 @@ export default function Homepage() {
         <title>Denis Kabana - Professional CV</title>
         <style>{`
           body { zoom: 1.15; }
-          @media print { body { zoom: 1; } }
+          @media print { body { zoom: 0.95; } }
         `}</style>
       </Head>
 

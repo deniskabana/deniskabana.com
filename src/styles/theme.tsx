@@ -6,7 +6,7 @@ import { muiComponents } from "./muiComponents"
 
 export type CheckboxLabelPlacement = "top" | "bottom" | "end" | "start"
 
-export const drawerWidth = 210
+export const drawerWidth = 220
 
 const commonTheme: ThemeOptions = {
   components: { ...muiComponents },

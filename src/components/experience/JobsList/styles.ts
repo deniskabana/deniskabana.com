@@ -8,13 +8,11 @@ export const styles = {
     margin-top: 0.5rem;
     display: block;
   `,
-
   descriptionPoints: css`
     margin-top: 0.75rem;
     padding-left: 1rem;
     list-style: disc;
   `,
-
   durationAndLocation: css`
     margin-bottom: 0.15rem;
 
@@ -27,11 +25,9 @@ export const styles = {
       vertical-align: middle;
     }
   `,
-
   positionTitle: css`
     margin-bottom: 0.35rem;
   `,
-
   timelineConnector: (theme: Theme) => css`
     background-color: ${theme.palette.secondary.main};
     width: 3px;
@@ -44,12 +40,10 @@ export const styles = {
       visibility: visible !important;
     }
   `,
-
   timelineContent: css`
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     padding-top: 0;
   `,
-
   timelineDot: (theme: Theme) => css`
     box-shadow: none;
     background: ${theme.palette.background.default};
@@ -61,9 +55,11 @@ export const styles = {
       border-radius: 50%;
     }
   `,
-
   timelineWrapper: css`
     margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: -1.75rem;
 
     ${"." + timelineItemClasses.root}:before {
       flex: 0;

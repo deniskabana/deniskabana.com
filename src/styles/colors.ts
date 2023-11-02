@@ -5,6 +5,6 @@ export const colors = {
   mutedTextDark: "rgba(255,255,255,0.65)",
   mutedTextLight: "rgba(0,0,0,0.5)",
 
-  primary: "#f5633e",
-  secondary: "#a163fd",
+  primary: "#3a9efd",
+  secondary: "#eb9d03",
 } as const

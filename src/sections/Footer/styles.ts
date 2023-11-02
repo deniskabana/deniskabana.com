@@ -8,7 +8,7 @@ export const styles = {
     margin: 1rem 0;
   `,
   footer: css`
-    margin-top: 5rem;
+    margin-top: 3rem;
   `,
   gdprWarning: css``,
   textContainer: css`

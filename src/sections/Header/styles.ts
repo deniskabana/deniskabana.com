@@ -16,7 +16,7 @@ export const styles = {
     z-index: 10;
     background-color: ${hex2rgba(
       theme.palette.background.default,
-      theme.palette.mode === "dark" ? 0.6 : 0.3,
+      theme.palette.mode === "dark" ? 0.5 : 0.4,
     )};
     backdrop-filter: blur(8px) saturate(140%);
 

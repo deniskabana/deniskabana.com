@@ -15,11 +15,11 @@ export const styles = {
     padding: 0.25rem 1.5rem 0;
   `,
   gridContainer: (landing: boolean) => css`
-    margin: ${landing ? "5rem" : "3rem"} 0 4rem;
+    margin: ${landing ? "5rem" : "2.5rem"} 0 4rem;
     display: flex;
 
     @media print {
-      margin-top: 1rem !important;
+      margin-top: 2rem !important;
     }
 
     ${landing &&

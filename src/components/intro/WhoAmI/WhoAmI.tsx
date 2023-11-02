@@ -29,11 +29,10 @@ export const WhoAmI = () => {
         variant="body2"
         color={theme.palette.secondary.main}
         fontWeight={FONT_WEIGHTS.bold}
+        mb={4}
       >
         Senior Frontend Engineer ・ Technical Lead ・ Mental health advocate
       </Typography>
-
-      <br />
 
       <Typography variant="body2" textAlign="justify" mb={2.5}>
         Hello there! I&rsquo;m Denis 👋
@@ -47,8 +46,7 @@ export const WhoAmI = () => {
       <Typography variant="body2" textAlign="justify">
         Flexibility&rsquo;s my middle name. When it comes to communication, I
         shine&nbsp;&mdash;&nbsp;whether I&rsquo;m collaborating behind the scenes or
-        confidently stepping into the spotlight. I enjoy being praised for my
-        communication skills.
+        confidently stepping into the spotlight.{" "}
       </Typography>
 
       <div className={styles.hobbies}>
