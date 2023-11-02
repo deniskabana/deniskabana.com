@@ -29,7 +29,7 @@ export const Footer = () => {
             written consent will be pursued to the full extent of law as described in
             Regulation (EU) 2016/679 (General Data Protection Regulation).
           </Typography>
-          <Typography variant="body2" fontWeight={FONT_WEIGHTS.bold} mt={3}>
+          <Typography variant="body2" fontWeight={FONT_WEIGHTS.bold} my={5}>
             Designed and developed by Denis Kabana &copy; {year}
           </Typography>
         </div>

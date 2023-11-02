@@ -10,6 +10,7 @@ export const styles = {
     border-color: ${theme.palette.secondary.main};
     border-width: 2px;
     box-shadow: 0 0 6px 0 rgb(0 0 0 / 15%);
+    text-decoration: none;
 
     @media print {
       box-shadow: none;

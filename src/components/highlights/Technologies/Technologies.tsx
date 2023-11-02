@@ -2,6 +2,7 @@ import { useCallback } from "react"
 import { Button, Typography, useTheme } from "@mui/material"
 import Image from "next/image"
 import { TECHNOLOGIES } from "@/constants/technologies"
+import { FONT_SIZES, FONT_WEIGHTS } from "@/styles"
 import { styles } from "./styles"
 
 export const Technologies = () => {
@@ -12,7 +13,13 @@ export const Technologies = () => {
       TECHNOLOGIES.map((tech) => (
         <Button variant="outlined" className={styles.button(theme)} key={tech.name}>
           <Image alt={tech.name} src={tech.src} width={tech.width ?? 20} height={20} />
-          <Typography variant="body2">{tech.name}</Typography>
+          <Typography
+            variant="body2"
+            fontSize={FONT_SIZES.smallest}
+            fontWeight={FONT_WEIGHTS.bold}
+          >
+            {tech.name}
+          </Typography>
         </Button>
       )),
     [theme],

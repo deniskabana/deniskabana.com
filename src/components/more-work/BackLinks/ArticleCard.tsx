@@ -11,7 +11,7 @@ export const ArticleCard = ({ data }: ArticleCardProps) => {
   const theme = useTheme()
 
   return (
-    <Card className={styles.card(theme)} variant="outlined">
+    <Card className={styles.card(theme)} variant="outlined" component="a" href={data.url}>
       <div className={styles.imageWrapper}>
         <CardMedia component="img" image={data.imageUrl} alt={data.title} />
         <Chip label={data.type} className={styles.dataType(theme)} size="small" />

@@ -3,7 +3,7 @@ import { css } from "@emotion/css"
 
 export const styles = {
   button: (theme: Theme) => css`
-    height: 1.75rem;
+    height: 1.7rem;
     border-radius: 1rem;
     border-width: 1px !important;
     border-color: ${theme.palette.text.disabled};
@@ -25,7 +25,7 @@ export const styles = {
   pillContainer: css`
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.4rem;
     margin-bottom: 1rem;
   `,
   title: css`

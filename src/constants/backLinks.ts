@@ -29,5 +29,6 @@ export const backLinks: BackLink[] = [
       "A React useState() replacement with persistence (Web Storage API) and full TypeScript support 💪",
     title: "react-persistent-state-hook",
     type: "project",
+    url: "https://github.com/deniskabana/react-persistent-state-hook",
   },
 ]
